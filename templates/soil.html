@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Soil Parameters</h2>
+<form id="soil-form" method="POST" action="{{ url_for('soil.index') }}">
+    <!-- Soil Type Selection -->
+    <div class="mb-3">
+        <label class="form-label">Soil Type</label>
+        <div>
+            <input type="radio" id="homogeneous" name="soil_type" value="homogeneous" required>
+            <label for="homogeneous">Homogeneous</label>
+            <input type="radio" id="layered" name="soil_type" value="layered" required>
+            <label for="layered">Layered</label>
+        </div>
+    </div>
+
+    <!-- Number of Layers Input -->
+    <div id="layered-soil-section">
+        <div class="mb-3">
+            <label for="layers" class="form-label">Number of Layers</label>
+            <input type="number" class="form-control" id="layers" name="layers" min="1" value="1">
+        </div>
+
+        <!-- Layer Details Table -->
+        <h4>Layer Details</h4>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Layer</th>
+                    <th>Bottom Depth (cm)</th>
+                    <th>Field Capacity (%)</th>
+                    <th>Wilting Point (%)</th>
+                    <th>Initial Moisture (%)</th>
+                </tr>
+            </thead>
+            <tbody id="soil-details-body">
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- TEW and REW Inputs -->
+    <h4>Evaporable Water Parameters</h4>
+    <div class="mb-3">
+        <label for="tew_depth" class="form-label"> Max depth for Total Evaporable Water (TEW) (m)</label>
+        <input type="number" class="form-control" id="tew_depth" name="tew_depth" value="0.1" step="0.01" required>
+    </div>
+    <div class="mb-3">
+        <label for="rew" class="form-label">Readily Evaporable Water (REW) (mm)</label>
+        <input type="number" class="form-control" id="rew" name="rew" value="8" step="0.1" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<script>
+    // Generate rows dynamically based on the number of layers
+    const layersInput = document.getElementById('layers');
+    const soilDetailsBody = document.getElementById('soil-details-body');
+
+    function generateLayerRows() {
+        const numLayers = parseInt(layersInput.value, 10);
+        soilDetailsBody.innerHTML = ''; // Clear previous rows
+
+        for (let i = 1; i <= numLayers; i++) {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>Layer ${i}</td>
+                <td><input type="number" class="form-control" name="bottom_depth_${i}" required></td>
+                <td><input type="number" class="form-control" name="field_capacity_${i}" required></td>
+                <td><input type="number" class="form-control" name="wilting_point_${i}" required></td>
+                <td><input type="number" class="form-control" name="initial_moisture_${i}" required></td>
+            `;
+            soilDetailsBody.appendChild(row);
+        }
+    }
+
+    // Generate rows on page load (default for homogeneous is 1 layer)
+    generateLayerRows();
+
+    // Update rows when the number of layers changes
+    layersInput.addEventListener('input', generateLayerRows);
+
+    // Ensure the number of layers defaults to 1 for homogeneous soil
+    document.querySelectorAll('input[name="soil_type"]').forEach(input => {
+        input.addEventListener('change', function () {
+            if (this.value === 'homogeneous') {
+                layersInput.value = 1; // Default to 1 layer for homogeneous soil
+                layersInput.setAttribute('readonly', 'readonly'); // Lock input for homogeneous
+            } else {
+                layersInput.removeAttribute('readonly'); // Allow input for layered soil
+            }
+            generateLayerRows();
+        });
+    });
+</script>
+{% endblock %}

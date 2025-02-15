@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Weather Parameters</h2>
+<form method="POST" action="{{ url_for('weather.index') }}" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="latitude" class="form-label">Latitude</label>
+        <input type="number" step="0.000001" class="form-control" id="latitude" value="43.60889" name="latitude" required>
+    </div>
+    <div class="mb-3">
+        <label for="longitude" class="form-label">Longitude</label>
+        <input type="number" step="0.000001" class="form-control" id="longitude" value="-116.19407"  name="longitude" required>
+    </div>
+    <div class="mb-3">
+        <label for="elevation" class="form-label">Elevation (m)</label>
+        <input type="number" class="form-control" id="elevation" value="824" name="elevation" required>
+    </div>
+    <div class="mb-3">
+        <label for="data-source" class="form-label">Weather Data Source</label>
+        <select class="form-select" id="data-source" name="data_source" required>
+            <option value="fetch">Fetch gridMET</option>
+            <option value="upload">Upload File</option>
+        </select>
+    </div>
+    <div id="upload-section" class="mb-3 d-none">
+        <label for="file" class="form-label">Upload CSV/Excel</label>
+        <input type="file" class="form-control" id="file" name="file" accept=".csv, .xlsx">
+    </div>
+    <!-- <div id="fetch-section" class="mb-3 d-none">
+        <label class="form-label">Include Pre-Calculated ET?</label>
+        <div>
+            <input type="radio" id="et-pre" name="et_option" value="pre" required>
+            <label for="et-pre">Yes</label>
+            <input type="radio" id="et-calculate" name="et_option" value="calculate" required>
+            <label for="et-calculate">No</label>
+        </div>
+    </div> -->
+    <button type="submit" class="btn btn-primary">Next</button>
+</form>
+<script>
+    document.getElementById('data-source').addEventListener('change', function () {
+        const value = this.value;
+        document.getElementById('upload-section').classList.toggle('d-none', value !== 'upload');
+        document.getElementById('fetch-section').classList.toggle('d-none', value !== 'fetch');
+    });
+</script>
+{% endblock %}

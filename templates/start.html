@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card shadow-lg" style="padding: 2rem; border-radius: 1rem;">
+                <div class="card-body">
+                    <h1 class="card-title text-center text-primary" style="font-size: 2.5rem;">Welcome to the FAO-56 Soil Water Balance App</h1>
+                    <p class="card-text mt-4" style="font-size: 1.25rem; line-height: 1.8;">
+                        This application allows you to simulate soil water balance based on FAO-56 guidelines. Follow these steps:
+                    </p>
+                    <ol style="font-size: 1.2rem; padding-left: 1.5rem;">
+                        <li>Provide plant parameters such as crop coefficients and growth stages.</li>
+                        <li>Enter weather data, either by uploading a file or fetching gridMET data.</li>
+                        <li>Define soil characteristics, including field capacity and wilting point.</li>
+                        <li>Input irrigation details, manually, through file upload or set auto irrigation.</li>
+                        <li>Run the simulation to generate results with graphical and tabular outputs.</li>
+                    </ol>
+                    <p style="font-size: 1.25rem;">To begin, click the "Next" button below.</p>
+                    <div class="text-center mt-4">
+                        <a href="{{ url_for('plant.index') }}" class="btn btn-primary btn-lg px-5 py-3">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

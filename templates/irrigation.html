@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Irrigation Parameters</h2>
+<form id="irrigation-form" method="POST" action="{{ url_for('irrigation.index') }}" enctype="multipart/form-data">
+    <!-- Irrigation Type Selection -->
+    <div class="mb-3">
+        <label class="form-label">Irrigation Type</label>
+        <div>
+            <input type="radio" id="upload" name="irrigation_type" value="upload" required>
+            <label for="upload">Upload File</label>
+            <input type="radio" id="manual" name="irrigation_type" value="manual" required>
+            <label for="manual">Manual Input</label>
+            <input type="radio" id="auto" name="irrigation_type" value="auto" required>
+            <label for="auto">Auto-Irrigation</label>
+        </div>
+    </div>
+
+    <!-- File Upload Section -->
+    <div id="upload-section" class="d-none">
+        <div class="mb-3">
+            <label for="file" class="form-label">Upload Irrigation Data (CSV/Excel)</label>
+            <input type="file" class="form-control upload-field" id="file" name="file" accept=".csv, .xlsx">
+        </div>
+    </div>
+
+    <!-- Manual Input Section -->
+    <div id="manual-section" class="d-none">
+        <div class="mb-3">
+            <label for="num-events" class="form-label">Number of Irrigation Events</label>
+            <input type="number" class="form-control manual-field" id="num-events" name="num_events" value="0" min="0">
+        </div>
+        <div id="manual-events" class="mb-3">
+            <!-- Dynamic rows will be added here -->
+        </div>
+    </div>
+
+    <!-- Auto-Irrigation Section -->
+    <div id="auto-section" class="d-none">
+        <h4>Auto-Irrigation</h4>
+        <div class="mb-3">
+            <label for="auto-start" class="form-label">Start Date</label>
+            <input type="date" class="form-control auto-field" id="auto-start" name="auto_start" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="auto-end" class="form-label">End Date</label>
+            <input type="date" class="form-control auto-field" id="auto-end" name="auto_end" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="trigger" class="form-label">Auto-Irrigation Trigger</label>
+            <select class="form-select auto-field" id="trigger" name="trigger">
+                <option value="root_depletion">Root Depletion</option>
+                <option value="et_replacement">ET Replacement</option>
+            </select>
+        </div>
+
+        <!-- Root Depletion Options -->
+        <div id="root-depletion-options" class="mb-3">
+            <label for="depletion-threshold" class="form-label">Depletion Fraction Threshold (pbase)</label>
+            <input type="number" class="form-control root-field" id="depletion-threshold" name="depletion_threshold" step="0.01" min="0" max="1" value="0.4">
+        </div>
+
+        <!-- ET Replacement Options -->
+        <div id="et-replacement-options" class="mb-3 d-none">
+            <label for="et-days" class="form-label">ET Replacement Days Interval</label>
+            <input type="number" class="form-control et-field" id="et-days" name="et_days" step="1" min="1" value="3">
+
+            <label for="et-type" class="form-label">ET Type to Replace</label>
+            <select class="form-select et-field" id="et-type" name="et_type">
+                <option value="ETref">Reference ET</option>
+                <option value="ETc">Crop ET</option>
+                <option value="ETcadj">Adjusted ET</option>
+            </select>
+
+            <label for="et-upper" class="form-label">Upper Limit (mm, optional)</label>
+            <input type="number" class="form-control et-field" id="et-upper" name="et_upper" step="1">
+        </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        function toggleSections() {
+            const type = document.querySelector('input[name="irrigation_type"]:checked')?.value;
+
+            document.getElementById('upload-section').classList.toggle('d-none', type !== 'upload');
+            document.getElementById('manual-section').classList.toggle('d-none', type !== 'manual');
+            document.getElementById('auto-section').classList.toggle('d-none', type !== 'auto');
+
+            toggleRequired('.upload-field', type === 'upload');
+            toggleRequired('.manual-field', type === 'manual');
+            toggleRequired('.auto-field', type === 'auto');
+        }
+
+        function toggleAutoIrrigationOptions() {
+            const trigger = document.getElementById('trigger').value;
+            document.getElementById('root-depletion-options').classList.toggle('d-none', trigger !== 'root_depletion');
+            document.getElementById('et-replacement-options').classList.toggle('d-none', trigger !== 'et_replacement');
+            toggleRequired('.root-field', trigger === 'root_depletion');
+            toggleRequired('.et-field', trigger === 'et_replacement');
+        }
+
+        function toggleRequired(selector, isRequired) {
+            document.querySelectorAll(selector).forEach(field => {
+                field.required = isRequired;
+            });
+        }
+
+        function generateManualEvents() {
+            const numEvents = parseInt(document.getElementById('num-events').value, 10);
+            const manualEventsContainer = document.getElementById('manual-events');
+            manualEventsContainer.innerHTML = ''; // Clear previous rows
+
+            for (let i = 1; i <= numEvents; i++) {
+                const row = `
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <label for="manual-date-${i}" class="form-label">Date ${i}</label>
+                            <input type="date" class="form-control" id="manual-date-${i}" name="manual_date_${i}" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="manual-amount-${i}" class="form-label">Amount (mm)</label>
+                            <input type="number" class="form-control" id="manual-amount-${i}" name="manual_amount_${i}" step="0.1" min="0" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="manual-fraction-${i}" class="form-label">Fraction</label>
+                            <input type="number" class="form-control" id="manual-fraction-${i}" name="manual_fraction_${i}" step="0.01" min="0" max="1" value="1" required>
+                        </div>
+                    </div>`;
+                manualEventsContainer.insertAdjacentHTML('beforeend', row);
+            }
+        }
+
+        // Event Listeners
+        document.querySelectorAll('input[name="irrigation_type"]').forEach(input => {
+            input.addEventListener('change', () => {
+                toggleSections();
+                toggleAutoIrrigationOptions();
+            });
+        });
+
+        document.getElementById('trigger').addEventListener('change', toggleAutoIrrigationOptions);
+        document.getElementById('num-events').addEventListener('input', generateManualEvents);
+
+        // Initialize functions on page load
+        toggleSections();
+        toggleAutoIrrigationOptions();
+    });
+</script>
+{% endblock %}

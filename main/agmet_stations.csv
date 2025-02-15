@@ -1,0 +1,180 @@
+siteid,description,state,latitude,longitude,elevation,timezone,install,horizontal_datum,vertical_datum,vertical_accuracy,elevation_method,tz_offset,active_flag,type,responsibility
+abei,"Aberdeen, Idaho Weather Station",ID,42.953333,-112.82667,1341.0,US/Mountain,3/20/1991,,m,0,agrimet_map,,,agrimet,noaa
+acki,"INL - Blackfoot,  Idaho  Weather Station",ID,43.18985,-112.3332,1377.696,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa
+afty,"Afton, Wyoming AgriMet Weather Station",WY,42.73333,-110.93583,1892.81,US/Mountain,11/1/1980,,m,0,agrimet_map,,,agrimet,pnro
+agko,"Agency Lake Ranch, Oregon AgriMet Weather Station",OR,42.56527,-121.9825,1264.92,US/Pacific,5/3/2000,,m,0,agrimet_map,,,agrimet,pnro
+ahti,"Ashton, Idaho AgriMet Weather Station",ID,44.025,-111.46666,1615.44,US/Mountain,6/1/1987,,m,0,agrimet_map,,,agrimet,pnro
+anvn,"DRI - Antelope Valley, Nevada Weather Station",NV,40.093889,-117.168889,1484.6808,US/Pacific,6/11/2011,,m,0,agrimet_map,,,agrimet,dri
+arao,"Aurora, Oregon AgriMet Weather Station",OR,45.28194,-122.75027,42.67,US/Pacific,10/22/1998,,m,0,agrimet_map,,,agrimet,pnro
+bano,"Bandon, Oregon AgriMet Weather Station",OR,43.09111,-124.41722,24.38,US/Pacific,5/1/1985,,m,0,agrimet_map,,,agrimet,pnro
+bato,"Beatty, Oregon AgriMet Weather Station",OR,42.47805,-121.27388,1316.74,US/Pacific,10/19/2004,,m,0,agrimet_map,,,agrimet,pnro
+bewo,"Bend, Oregon AgriMet Weather Station",OR,44.0475,-121.32027,1103.38,US/Pacific,5/1/2003,,m,0,agrimet_map,,,agrimet,pnro
+bfam,"Blackfeet-Seville Colony, MT (BFAM)",MT,48.67539978,-112.5886993,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+bfgi,Boise Fairgrounds Weather Station,ID,43.65303,-116.27417,800.0,US/Mountain,8/15/2013,,m,0,agrimet_map,,,agrimet,pnro
+bftm,"Big Flat - Turner, MT (BFTM)",MT,48.83568192,-108.5636673,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+bkvo,"Baker Valley, Oregon Agrimet Weather Station",OR,44.88277,-117.96277,1042.42,US/Pacific,4/1/2001,,m,0,agrimet_map,,,agrimet,pnro
+blcu,"UCC - Blue Creek, Utah Weather Station",UT,41.962167,-112.491167,1575.816,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+bndw,"Bonneville Dam AgriMet, Washington AgriMet Weather Station",WA,45.64777,-121.93111,24.38,US/Pacific,4/13/2002,,m,0,agrimet_map,,,agrimet,pnro
+boii,"Boise, Idaho AgriMet Weather Station",ID,43.60027,-116.17694,829.06,US/Mountain,7/26/1995,,m,0,agrimet_map,,,agrimet,pnro
+bomt,"Broken-O Ranch, MT (BOMT)",MT,47.51954651,-112.2359009,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+bozm,"Bozeman, MT (BOZM)",MT,45.67301559,-111.1546249,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+brgm,"Buffalo Rapids-Glendive, MT (BRGM)",MT,46.98846817,-104.8031464,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+brko,"Brookings, Oregon AgriMet Weather Station",OR,42.03,-124.24083,24.38,US/Pacific,9/27/1999,,m,0,agrimet_map,,,agrimet,pnro
+brtm,"Buffalo Rapids-Terry, MT (BRTM)",MT,46.77838516,-105.2975464,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+bucu,"UCC - Buckhorn, Utah Weather Station",UT,38.0399,-112.711483,1773.936,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+bvpc,"DRI - Bridgeport Valley, Nevada Weather Station",NV,38.223056,-119.252222,1979.676,US/Pacific,7/12/2012,,m,0,agrimet_map,,,agrimet,dri
+cdai,"Coeur d'Alene Fairgrounds, Idaho Weather Station",ID,47.71797,-116.78418,620.0,US/Pacific,,,m,0,agrimet_map,,,agrimet,pnro
+cedc,"Cedarville, California AgriMet Weather Station",CA,41.58527,-120.17138,1402.08,US/Pacific,4/1/1985,,m,0,agrimet_map,,,agrimet,pnro
+cedu,"UCC - Cedar City, Utah Weather Station",UT,37.67296667,-113.1371667,1685.2392,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+chaw,"Chamokane, Washington AgriMet Weather Station",WA,48.03138,-117.73916,594.36,US/Pacific,11/27/2007,,m,0,agrimet_map,,,agrimet,pnro
+chvo,"Christmas Valley, Oregon AgriMet Weather Station",OR,43.24138,-120.72805,1312.16,US/Pacific,4/1/1985,,m,0,agrimet_map,,,agrimet,pnro
+cjdw,"Chief Joseph Dam, Washington AgriMet Weather Station",WA,47.99083,-119.63555,301.75,US/Pacific,4/15/2002,,m,0,agrimet_map,,,agrimet,pnro
+ckvy,"Cokeville, Wyoming AgriMet Weather Station",ID,42.077831,-110.95611,1887.0,US/Mountain,3/9/2015,,m,0,agrimet_map,,,agrimet,pnro
+clvn,"DRI - Clover Valley, Nevada Weather Station",NV,40.868333,-114.969444,1720.9008,US/Pacific,9/11/2011,,m,0,agrimet_map,,,agrimet,dri
+covm,"Corvallis, Montana AgriMet Weather Station",MT,46.33333,-114.08333,1096.37,US/Mountain,4/1/1984,,m,0,agrimet_map,,,agrimet,pnro
+crnu,"UCC - Corinne, Utah Weather Station",UT,41.51915,-112.17395,1291.7424,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+crsm,"Creston, Montana AgriMet Weather Station",MT,48.1875,-114.12777,899.16,US/Mountain,4/1/1988,,m,0,agrimet_map,,,agrimet,pnro
+crvo,"Corvallis, Oregon AgriMet Weather Station",OR,44.63416,-123.19,70.1,US/Pacific,2/1/1990,,m,0,agrimet_map,,,agrimet,pnro
+csdu,"Castle Dale, Utah Weather Station",UT,39.220131,-111.07003,1798.0,US/Mountain,12/1/2014,,m,0,agrimet_map,,,agrimet,pnro
+csvu,"Castle Valley, Utah AgriMet Weather Station",UT,38.648302,-109.398967,1429.0,US/Mountain,3/11/2015,,m,0,agrimet_map,,,agrimet,pnro
+cvan,"DRI - Carson Valley, Nevada Weather Station",NV,38.992778,-119.803889,1425.5496,US/Pacific,8/10/2010,,m,0,agrimet_map,,,agrimet,dri
+defo,"Dee Flat, Oregon AgriMet Weather Station",OR,45.58638,-121.64055,350.52,US/Pacific,11/1/1988,,m,0,agrimet_map,,,agrimet,pnro
+deni,"Dworshak - Dent Acres, Idaho AgriMet Weather Station",ID,46.62333,-116.22055,499.87,US/Mountain,4/19/2002,,m,0,agrimet_map,,,agrimet,pnro
+dlnm,"Dillon, MT (DLNM)",MT,45.3335762,-112.5093918,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+drfu,"UCC - Drainage Farm, Utah Weather Station",UT,41.76295,-111.87895,1351.788,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+drlm,"Deer Lodge, Montana AgriMet Weather Station",MT,46.33555,-112.76666,1426.46,US/Mountain,6/4/1998,,m,0,agrimet_map,,,agrimet,pnro
+drpw,"Deer Park, Washington Weather Station",WA,47.954642,-117.433522,662.94,US/Pacific,6/25/2014,,m,0,agrimet_map,,,agrimet,pnro
+dtro,"Detroit Lake, Oregon AgriMet Weather Station",OR,44.73,-122.17916,510.54,US/Pacific,4/19/2002,,m,0,agrimet_map,,,agrimet,pnro
+ducu,"Duchesne, Utah AgriMet Weather Station",UT,40.18068,-110.36013,1675.0,US/Mountain,,,m,0,agrimet_map,,,agrimet,pnro
+dwni,"Downey, Idaho Weather Station",ID,42.43355,-112.12929,1483.0,US/Mountain,3/27/2015,,m,0,agrimet_map,,,agrimet,pnro
+echo,"Echo, Oregon AgriMet Weather Station",OR,45.71861,-119.31111,231.65,US/Pacific,3/1/1988,,m,0,agrimet_map,,,agrimet,pnro
+efhw,"Entiat Fish Hatchery, Washington Weather Station",WA,47.69796,-120.32373,315.0,US/Pacific,9/26/2013,,m,0,agrimet_map,,,agrimet,pnro
+elmu,"Elmo, Utah Weather Station",UT,39.421265,-110.83798,1744.0,US/Mountain,12/3/2014,,m,0,agrimet_map,,,agrimet,pnro
+eurn,"Eureka, Nevada AgriMet Weather Station ",NV,39.68527,-115.97861,1797.41,US/Pacific,6/1/1987,,m,0,agrimet_map,,,agrimet,pnro
+evfu,"UCC - Evan's Farm, Utah Weather Station",UT,41.6945,-111.8331667,1382.268,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+evty,"Evanston, Wyoming AgriMet Weather Station",WY,41.19713,111.02937,2080.0,US/Mountain,3/9/2015,,,0,,,,agrimet,pnro
+fafi,"Fairfield, Idaho AgriMet Weather Station  ",ID,43.31305,-114.82222,1535.58,US/Mountain,6/1/1987,,m,0,agrimet_map,,,agrimet,pnro
+faln,"Fallon, Nevada AgriMet Weather Station",NV,39.4575,-118.77388,1208.53,US/Pacific,4/1/2001,,m,0,agrimet_map,,,agrimet,pnro
+flou,"UCC - Flowell, Utah Weather Station",UT,38.9571,-112.0004,1443.228,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+fogo,"Forest Grove, Oregon AgriMet Weather Station",OR,45.55305,-123.08361,54.86,US/Pacific,5/1/1989,,m,0,agrimet_map,,,agrimet,pnro
+frnu,"Ferron, Utah Weather Station",UT,39.075554,-111.15426,1830.0,US/Mountain,12/2/2014,,m,0,agrimet_map,,,agrimet,pnro
+fthi,"Fort Hall, Idaho AgriMet Weather Station ",ID,43.07138,-112.43111,1354.84,US/Mountain,11/15/1992,,m,0,agrimet_map,,,agrimet,pnro
+gcdw,"Grand Coulee Dam, Washington AgriMet Weather Station",WA,47.94527,-118.95361,402.34,US/Pacific,4/16/2002,,m,0,agrimet_map,,,agrimet,pnro
+gdvi,"Grand View, Idaho AgriMet Weather Station",ID,42.9125,-116.05611,786.38,US/Mountain,10/1/1992,,m,0,agrimet_map,,,agrimet,pnro
+gerw,"George, Washington AgriMet Weather Station",WA,47.04388,-119.64222,350.52,US/Pacific,5/1/1986,,m,0,agrimet_map,,,agrimet,pnro
+gfmt,"Greenfields-Fairfield, MT (GFMT)",MT,47.65853119,-111.8190994,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+gfri,"Glenns Ferry, Idaho AgriMet Weather Station",ID,42.86666,-115.35694,922.02,US/Mountain,11/15/1992,,m,0,agrimet_map,,,agrimet,pnro
+glgm,"Glasgow, MT (GLGM)",MT,48.14320374,-106.6093292,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+golw,"Goldendale, Washington AgriMet Weather Station",WA,45.81194,-120.82444,512.06,US/Pacific,10/24/1991,,m,0,agrimet_map,,,agrimet,pnro
+grei,"Grace, Idaho AgriMet Weather Station",ID,42.51496,-111.73606,1661.0,US/Mountain,3/13/2014,,m,0,agrimet_map,,,agrimet,pnro
+grtu,"Grantsville, Utah AgriMet Weather Station",UT,40.530544,-112.756527,1331.0,US/Mountain,3/10/2015,,m,0,agrimet_map,,,agrimet,pnro
+hami,"INL - Hamer,  Idaho Weather Station",ID,44.007417,-112.238833,1476.1464,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa
+hcko,"Hills Creek Dam Weather Station, Oregon",OR,43.709722,-122.423611,439.0,US/Pacific,4/19/2002,,m,0,agrimet_map,,,agrimet,pnro
+hdru,"UCC - Hardware Ranch, Utah Weather Station",UT,41.60123333,-111.56685,1695.9072,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+hero,"Hermiston, Oregon AgriMet Weather Station",OR,45.82111,-119.52138,167.64,US/Pacific,5/1/1983,,m,0,agrimet_map,,,agrimet,pnro
+hntu,"Huntington, Utah Weather Station",UT,39.307898,-110.97399,1754.0,US/Mountain,12/2/2014,,m,0,agrimet_map,,,agrimet,pnro
+hoxo,"Hood River, Oregon AgriMet Weather Station",OR,45.68444,-121.51805,155.45,US/Pacific,5/1/1987,,m,0,agrimet_map,,,agrimet,pnro
+hrfo,"Hereford, Oregon AgriMet Weather Station",OR,44.48805,-118.02,1097.28,US/Pacific,4/28/1998,,m,0,agrimet_map,,,agrimet,pnro
+hrhw,"Harrah, Washington AgriMet Weather Station",WA,46.38472,-120.57444,259.08,US/Pacific,5/1/1987,,m,0,agrimet_map,,,agrimet,pnro
+hrlm,"Harlem, MT (HRLM)",MT,48.54356766,-108.8346176,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+hrmo,"Hermiston R & E Center, Oregon AgriMet Weather Station",OR,45.81944,-119.28333,185.01,US/Pacific,7/15/1993,,m,0,agrimet_map,,,agrimet,pnro
+huan,"DRI - Hualapai Flat, Nevada Weather Station",NV,40.901111,-119.333056,1235.964,US/Pacific,10/12/2012,,m,0,agrimet_map,,,agrimet,dri
+hvmt,"Helena Valley, MT (HVMT)",MT,46.67560577,-111.989151,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+ichi,"INL - Richfield,  Idaho Weather Station",ID,43.0606,-114.134583,1328.3184,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa
+ifai,"INL - Idaho Falls,  Idaho Weather Station",ID,43.504133,-112.050133,1435.3032,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa
+imbo,"Imbler, Oregon AgriMet Weather Station",OR,45.43333,-117.96666,838.2,US/Pacific,4/1/1994,,m,0,agrimet_map,,,agrimet,pnro
+jvwm,"Jefferson River Valley-Whitehall, MT (JVWM)",MT,45.79779053,-112.1657944,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+kflo,"Klamath Falls, Oregon AgriMet Weather Station",OR,42.16472,-121.755,1249.68,US/Pacific,3/30/1999,,m,0,agrimet_map,,,agrimet,pnro
+kflw,"Kettle Falls, Washington AgriMet Weather Station",WA,48.595,-118.12416,408.43,US/Pacific,4/17/2002,,m,0,agrimet_map,,,agrimet,pnro
+ktbi,"Kettle Butte, Idaho Weather Station",ID,43.54861111,-112.3258333,1565.0,US/Mountain,10/15/1995,,m,0,agrimet_map,,,agrimet,noaa
+lako,"Lakeview, Oregon AgriMet Weather Station",OR,42.12222,-120.52305,1453.9,US/Pacific,4/1/1988,,m,0,agrimet_map,,,agrimet,pnro
+laku,"UCC - Laketown , Utah Weather Station",UT,41.8379,-111.3343833,1816.3032,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+lbrw,"Lake Bryan - Rice Bar, Washington AgriMet Weather Station",WA,46.6975,-117.65416,192.02,US/Pacific,4/19/2002,,m,0,agrimet_map,,,agrimet,pnro
+legw,"Legrow, Washington AgriMet Weather Station",WA,46.20527,-118.93611,176.78,US/Pacific,7/1/1986,,m,0,agrimet_map,,,agrimet,pnro
+lewu,"UCC - Lewiston, Utah Weather Station",UT,41.95213333,-111.8690333,1375.8672,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+lggu,"UCC - Logan Golf, Utah Weather Station",UT,41.73868333,-111.8035333,1465.4784,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+libw,"Liberty Lake, Washington Weather Station",WA,47.66533,-117.087208,632.0,US/Pacific,11/18/2014,,m,0,agrimet_map,,,agrimet,pnro
+lidw,"Lind, Washington AgriMet Weather Station",WA,46.86722,-118.73944,449.58,US/Pacific,5/1/1983,,m,0,agrimet_map,,,agrimet,pnro
+lkpo,"Lookout Point Dam Weather Station, Oregon",OR,43.9166666,-122.7527777,930.0,US/Pacific,4/19/2002,,m,0,agrimet_map,,,agrimet,pnro
+lmmm,"Lower Musselshell-Melstone, MT (LMMM)",MT,46.5627327,-108.0057526,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+loro,"Lorella, Oregon AgriMet Weather Station",OR,42.07777,-121.22416,1267.97,US/Pacific,4/1/2001,,m,0,agrimet_map,,,agrimet,pnro
+mali,"Malta, Idaho AgriMet Weather Station",ID,42.4375,-113.41388,1344.17,US/Mountain,6/1/1983,,m,0,agrimet_map,,,agrimet,pnro
+masw,"Manson, Washington AgriMet Weather Station",WA,47.91694,-120.12444,601.07,US/Pacific,11/3/1993,,m,0,agrimet_map,,,agrimet,pnro
+matm,"Malta, MT (MATM)",MT,48.37401199,-107.7764969,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+mdfo,"Medford, Oregon AgriMet Weather Station",OR,42.33111,-122.93777,408.43,US/Pacific,5/1/1989,,m,0,agrimet_map,,,agrimet,pnro
+mdki,"INL - Minidoka,  Idaho Weather Station",ID,42.804417,-113.58965,1306.068,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa
+mdxo,"Moody Farms Control Station, Oregon Weather Station",OR,44.86912,-121.0683,391.0,US/Pacific,9/9/2013,,m,0,agrimet_map,,,agrimet,pnro
+mnpi,"Montpelier, Idaho Weather Station",ID,42.25452,-111.33773,1823.0,US/Mountain,,,m,0,agrimet_map,,,agrimet,pnro
+mnru,"Monroe, Utah AgriMet Weather Station",UT,38.634188,-112.157598,1648.0,US/Mountain,3/11/2015,,m,0,agrimet_map,,,agrimet,pnro
+mnti,"Monteview, Idaho Weather Station",ID,44.015,-112.5358333,1480.0,US/Mountain,10/15/1995,,m,0,agrimet_map,,,agrimet,pnro
+moan,"DRI - Moapa Valley, Nevada Weather Station",NV,36.569722,-114.458889,398.6784,US/Pacific,2/10/2010,,m,0,agrimet_map,,,agrimet,dri
+mrso,"Madras, Oregon AgriMet Weather Station",OR,44.68,-121.14861,743.71,US/Pacific,5/1/1984,,m,0,agrimet_map,,,agrimet,pnro
+msvn,"DRI - Mason Valley WMA, Nevada Weather Station",NV,39.106667,-119.147222,1318.8696,US/Pacific,4/10/2011,,m,0,agrimet_map,,,agrimet,dri
+muru,"UCC - Murray, Utah Weather Station",UT,40.63133333,-111.9198,1307.592,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+mwsm,"Moccasin, MT (MWSM)",MT,47.05853653,-109.9507523,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+mwso,"Middle Warm Springs, Oregon Weather Station",OR,44.85424,-121.1479,432.0,US/Pacific,9/12/2013,,m,0,agrimet_map,,,agrimet,pnro
+nepu,"UCC - Nephi, Utah Weather Station",UT,39.68941667,-111.8767833,1524.6096,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+nmpi,"Nampa, Idaho AgriMet Weather Station",ID,43.43722,-116.64527,823.57,US/Mountain,3/11/1996,,m,0,agrimet_map,,,agrimet,pnro
+nsvn,"DRI - North Spring Valley, Nevada Weather Station",NV,39.458056,-114.506667,1719.6816,US/Pacific,6/11/2011,,m,0,agrimet_map,,,agrimet,dri
+odsw,"Odessa, Washington AgriMet Weather Station",WA,47.30888,-118.87861,502.92,US/Pacific,4/1/1984,,m,0,agrimet_map,,,agrimet,pnro
+omaw,"Omak, Washington AgriMet Weather Station",WA,48.4025,-119.57611,376.43,US/Pacific,1/1/1989,,m,0,agrimet_map,,,agrimet,pnro
+onto,"Ontario, Oregon AgriMet Weather Station",OR,43.97777,-117.01527,688.85,US/Mountain,4/30/1992,,m,0,agrimet_map,,,agrimet,pnro
+osgi,"Osgood, Idaho AgriMet Weather Station",ID,43.58884,-112.07568,1471.0,US/Mountain,3/13/2014,,m,0,agrimet_map,,,agrimet,pnro
+owei,"INL - Howe, Idaho Weather Station",ID,43.784117,-112.977317,1467.612,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa
+panu,"UCC - Panguitch, Utah Weather Station",UT,37.86858333,-112.4217667,1996.44,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+paro,"Parkdale, Oregon AgriMet Weather Station",OR,45.54444,-121.61666,451.1,US/Pacific,11/1/1988,,m,0,agrimet_map,,,agrimet,pnro
+paru,"UCC - Parowan, Utah Weather Station",UT,37.86226667,-112.8810667,1758.696,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+pcyo,"Prairie City, Oregon AgriMet Weather Station",OR,44.44083,-118.62777,1143.61,US/Pacific,4/1/1989,,m,0,agrimet_map,,,agrimet,pnro
+pelu,"Pelican Lake, Utah Weather Station",UT,40.17426,-109.66665,1467.0,US/Mountain,12/3/2014,,m,0,agrimet_map,,,agrimet,pnro
+pici,"Picabo, Idaho AgriMet Weather Station",ID,43.31166,-114.16583,1493.52,US/Mountain,5/1/1982,,m,0,agrimet_map,,,agrimet,pnro
+plvu,"Pleasant Valley, Utah Weather Station",UT,40.1663,-110.09471,1612.0,US/Mountain,12/3/2014,,m,0,agrimet_map,,,agrimet,pnro
+pmai,"Parma, Idaho AgriMet Weather Station",ID,43.8,-116.93333,702.56,US/Mountain,3/1/1986,,m,0,agrimet_map,,,agrimet,pnro
+pngo,"Pine Grove, Oregon AgriMet Weather Station",OR,45.65222,-121.50916,188.98,US/Pacific,11/1/1988,,m,0,agrimet_map,,,agrimet,pnro
+pobo,"Powell Butte, Oregon AgriMet Weather Station",OR,44.24833,-120.94972,975.36,US/Pacific,9/21/1993,,m,0,agrimet_map,,,agrimet,pnro
+psfi,"Post Falls, Idaho Weather Station",ID,47.713664,-116.970096,665.0,US/Pacific,11/18/2014,,m,0,agrimet_map,,,agrimet,pnro
+psti,"Preston, Idaho Weather Station",ID,42.10715,-111.89363,1335.0,,11/5/2014,,m,0,agrimet_map,,,agrimet,pnro
+pvan,"DRI - Paradise Valley, Nevada Weather Station",NV,41.185556,-117.660278,1341.12,US/Pacific,11/10/2010,,m,0,agrimet_map,,,agrimet,dri
+pwln,"DRI - Pahranagat NWR, Nevada Weather Station",NV,37.245556,-115.106389,982.98,US/Pacific,7/10/2010,,m,0,agrimet_map,,,agrimet,dri
+rbym,"Ruby River Valley-Laurin, MT (RBYM)",MT,45.34474564,-112.1502838,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+rdbm,"Round Butte, Montana AgriMet Weather Station",MT,47.53944,-114.28055,926.59,US/Mountain,3/1/1989,,m,0,agrimet_map,,,agrimet,pnro
+rgbi,"Rigby, Idaho AgriMet Weather Station",ID,43.6772,-111.87922,1488.0,US/Mountain,3/13/2014,,m,0,agrimet_map,,,agrimet,pnro
+robi,"INL - Roberts,  Idaho Weather Station",ID,43.743517,-112.121117,1450.848,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa
+rogn,"DRI - Rogers Spring, Nevada Weather Station",NV,36.478333,-116.330833,688.848,US/Pacific,9/10/2010,,m,0,agrimet_map,,,agrimet,dri
+rpti,"Rupert, Idaho AgriMet Weather Station",ID,42.59555,-113.87388,1266.44,US/Mountain,3/1/1988,,m,0,agrimet_map,,,agrimet,pnro
+rrci,"INL - Arco,  Idaho Weather Station",ID,43.62455,-113.2971,1627.3272,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa
+rrii,"Ririe, Idaho AgriMet Weather Station",ID,43.610345,-111.700605,1547.0,US/Mountain,3/13/2014,,m,0,agrimet_map,,,agrimet,pnro
+rthi,"Rathdrum Prairie, Idaho AgriMet Weather Station",ID,47.8,-116.83333,673.61,US/Pacific,4/9/2008,,m,0,agrimet_map,,,agrimet,pnro
+rxgi,"Rexburg, Idaho AgriMet Weather Station ",ID,43.85,-111.76666,1485.9,US/Mountain,6/1/1987,,m,0,agrimet_map,,,agrimet,pnro
+sbmw,"Seven Bays Marina, Washington AgriMet Weather Station",WA,47.85527,-118.34111,417.58,US/Pacific,4/16/2002,,m,0,agrimet_map,,,agrimet,pnro
+scpu,"Scipio, Utah AgriMet Weather Station",UT,39.22009,-112.098476,1627.0,US/Mountain,3/13/2015,,m,0,agrimet_map,,,agrimet,pnro
+shli,"Shelley, Idaho Weather Station",ID,43.43452,-112.14273,1417.0,US/Mountain,3/13/2014,,m,0,agrimet_map,,,agrimet,pnro
+sigm,"Saint Ignatius, Montana AgriMet Weather Station",MT,47.32527,-114.08416,908.3,US/Mountain,4/1/1991,,m,0,agrimet_map,,,agrimet,pnro
+silw,"Silcott Island, Washington AgriMet Weather Station",WA,46.41861,-117.18472,251.46,US/Pacific,4/19/2002,,m,0,agrimet_map,,,agrimet,pnro
+slwi,"Silverwood WWTP Athol, Idaho Weather Station",ID,47.901142,-116.71243,712.3176,US/Pacific,6/26/2014,,m,0,agrimet_map,,,agrimet,pnro
+smvn,"DRI - Smith Valley, Nevada Weather Station",NV,38.751389,-119.335556,1488.948,US/Pacific,8/10/2010,,m,0,agrimet_map,,,agrimet,dri
+snkn,"DRI - Snake Valley, Nevada Weather Station",NV,39.021111,-114.089722,1578.864,US/Pacific,8/10/2010,,m,0,agrimet_map,,,agrimet,dri
+snsu,"UCC - Snowville South, Utah Weather Station",UT,41.86625,-112.72465,1466.6976,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+snwu,"UCC - Snowville (West), Utah Weather Station",UT,41.98381667,-112.9119833,1354.2264,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+span,"DRI - Truckee Meadows, Nevada Weather Station",NV,39.503056,-119.737778,1338.072,US/Pacific,5/10/2010,,m,0,agrimet_map,,,agrimet,dri
+spfu,"UCC - Spanish Fork, Utah Weather Station",UT,40.0672,-111.6291167,1438.9608,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+spli,"Spirit Lake, Washington Weather Station",ID,47.987552,-116.884978,756.0,US/Pacific,11/19/2014,,m,0,agrimet_map,,,agrimet,pnro
+spvu,"San Pete Valley, Utah AgriMet Weather Station",UT,39.485745,-111.537214,1711.0,US/Mountain,3/16/2015,,m,0,agrimet_map,,,agrimet,pnro
+ssvn,"DRI - Sand Spring Valley, Nevada Weather Station",NV,37.646667,-115.7975,1466.088,US/Pacific,12/10/2010,,m,0,agrimet_map,,,agrimet,dri
+stvn,"DRI - Steptoe Valley North, Nevada Weather Station",NV,40.084167,-114.651389,1784.604,US/Pacific,3/11/2011,,m,0,agrimet_map,,,agrimet,dri
+sugi,"INL - Sugar City,  Idaho Weather Station",ID,43.896583,-111.737617,1491.996,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa
+sutu,"Sutherland, Utah  AgriMet Weather Station",UT,39.45071,-112.63823,1451.0,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+svwm,"Shields Valley-Wilsall, MT (SVWM)",MT,46.04659653,-110.6532822,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+swmn,"DRI - Steptoe Valley WMA, Nevada Weather Station",NV,39.195556,-114.810278,1965.96,US/Pacific,3/11/2011,,m,0,agrimet_map,,,agrimet,dri
+tabi,"INL - Taber,  Idaho Weather Station",ID,43.318683,-112.6918,1441.704,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa
+teri,"INL - Terreton,  Idaho Weather Station",ID,43.841683,-112.41825,1460.6016,US/Mountain,,,m,0,agrimet_map,,,agrimet,noaa
+tfgi,"Twin Falls Fairgrounds, Filer Idaho",ID,42.568782,-114.601548,1147.0,US/Mountain,8/21/2013,,m,0,agrimet_map,,,agrimet,pnro
+tosm,"Toston, MT (TOSM)",MT,46.12224579,-111.4948807,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+trfm,"Teton River-Farmington, MT (TRFM)",MT,47.90052032,-112.1596756,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+trmu,"UCC - Tremonton, Utah Weather Station",UT,41.72293333,-112.15375,1320.0888,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+trpu,"Tropic, Utah AgriMet Weather Station",UT,37.627466,-112.046416,1893.0,US/Mountain,3/12/2015,,m,0,agrimet_map,,,agrimet,pnro
+trti,"Terraton, Idaho AgriMet Weather Station",ID,43.8704,-112.26394,1478.0,US/Mountain,3/13/2014,,m,0,agrimet_map,,,agrimet,pnro
+twfi,Twin Falls (Kimberly) Idaho AgriMet Weather Station  7E,ID,42.54611,-114.34527,1194.82,US/Mountain,3/1/1990,,m,0,agrimet_map,,,agrimet,pnro
+umhm,"Upper Musselshell-Harlowton, MT (UMHM)",MT,46.44691467,-109.9408188,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains
+vecu,"UCC - Venice, Utah Weather Station",UT,38.8235,-112.000367,1598.3712,US/Mountain,,,m,0,agrimet_map,,,agrimet,ucc
+wrdo,"Worden, Oregon AgriMet Weather Station",OR,42.0125,-121.7875,1243.58,US/Pacific,4/19/2000,,m,0,agrimet_map,,,agrimet,pnro
+wssm,"White Sulphur Springs, MT (WSSM)",MT,46.55336761,-110.9476089,,US/Mountain,,,,0,usbr_map.json,,,agrimet,great_plains

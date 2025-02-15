@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Plant Parameters</h2>
+<form method="POST" action="{{ url_for('plant.index') }}">
+    <div class="mb-3">
+        <label for="planting-date" class="form-label">Planting Date</label>
+        <input type="date" class="form-control" id="planting-date" name="planting_date" required>
+    </div>
+    <div class="mb-3">
+        <label for="maturity-date" class="form-label">Maturity Date</label>
+        <input type="date" class="form-control" id="maturity-date" name="maturity_date" required>
+    </div>
+    <div class="mb-3">
+        <label for="crop" class="form-label">Crop</label>
+        <select class="form-select" id="crop" name="crop" required>
+            {% for crop in crops %}
+            <option value="{{ crop }}">{{ crop.capitalize() }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <!-- Dynamic Fields -->
+    <div id="dynamic-fields">
+        <!-- Crop Coefficients -->
+        <h4>Crop Coefficients</h4>
+        <div class="mb-3">
+            <label for="kcb-ini" class="form-label">Initial Kcb</label>
+            <input type="number" class="form-control" id="kcb-ini" name="kcb_ini" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="kcb-mid" class="form-label">Mid-season Kcb</label>
+            <input type="number" class="form-control" id="kcb-mid" name="kcb_mid" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="kcb-end" class="form-label">End-season Kcb</label>
+            <input type="number" class="form-control" id="kcb-end" name="kcb_end" step="0.01" required>
+        </div>
+
+        <!-- Checkbox for Kcb Adjustment -->
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="kcb-adjust" name="kcb_adjust">
+            <label for="kcb-adjust" class="form-check-label">Adjust Kcb for climatic conditions</label>
+        </div>
+
+        <!-- Stage Lengths -->
+        <h4>Stage Lengths</h4>
+        <div class="mb-3">
+            <label for="l-ini" class="form-label">Initial Stage Length (days)</label>
+            <input type="number" class="form-control" id="l-ini" name="l_ini" step="1" required>
+        </div>
+        <div class="mb-3">
+            <label for="l-dev" class="form-label">Development Stage Length (days)</label>
+            <input type="number" class="form-control" id="l-dev" name="l_dev" step="1" required>
+        </div>
+        <div class="mb-3">
+            <label for="l-mid" class="form-label">Mid-season Stage Length (days)</label>
+            <input type="number" class="form-control" id="l-mid" name="l_mid" step="1" required>
+        </div>
+        <div class="mb-3">
+            <label for="l-end" class="form-label">Late Season Stage Length (days)</label>
+            <input type="number" class="form-control" id="l-end" name="l_end" step="1" required>
+        </div>
+
+        <!-- Checkbox for Stage Length Adjustment -->
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="stage-length-adjust" name="stage_length_adjust">
+            <label for="stage-length-adjust" class="form-check-label">
+                Adjust stage lengths to match crop span
+            </label>
+        </div>
+
+        <!-- Other Crop Properties -->
+        <h4>Other Properties</h4>
+        <div class="mb-3">
+            <label for="h-ini" class="form-label">Initial Height (m)</label>
+            <input type="number" class="form-control" id="h-ini" name="h_ini" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="h-max" class="form-label">Maturity Height (m)</label>
+            <input type="number" class="form-control" id="h-max" name="h_max" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="zr-ini" class="form-label">Initial Root Depth (m)</label>
+            <input type="number" class="form-control" id="zr-ini" name="zr_ini" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="zr-max" class="form-label">Final Root Depth (m)</label>
+            <input type="number" class="form-control" id="zr-max" name="zr_max" step="0.01" required>
+        </div>
+        <div class="mb-3">
+            <label for="p-value" class="form-label">P-Value</label>
+            <input type="number" class="form-control" id="p-value" name="p" step="0.01" min="0" max="1" required>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="p_value_adjust" name="p_value_adjust">
+            <label for="p_value_adjust" class="form-check-label">Adjust P-Value</label>
+        </div>        
+        <div class="mb-3">
+            <label for="CN2" class="form-label">CN2</label>
+            <input type="number" class="form-control" id="CN2" name="CN2" step="1" min="0" max="100" required>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="roff_adjust" name="roff_adjust" checked>
+            <label for="roff_adjust" class="form-check-label">Include Surface Runoff</label>
+        </div>        
+    </div>
+
+    <button type="submit" class="btn btn-primary">Next</button>
+</form>
+
+<script>
+    // Populate dynamic fields based on crop selection
+    const cropCoefficients = {{ crop_coefficients|tojson }};
+    const cropProperties = {{ crop_properties|tojson }};
+    const cropLengths = {{ crop_lengths|tojson }};
+    const cn2Values = {{ cn2|tojson }};
+
+    document.getElementById('crop').addEventListener('change', function () {
+        const crop = this.value;
+
+        // Update coefficient fields
+        document.getElementById('kcb-ini').value = cropCoefficients[crop].kcb_ini;
+        document.getElementById('kcb-mid').value = cropCoefficients[crop].kcb_mid;
+        document.getElementById('kcb-end').value = cropCoefficients[crop].kcb_end;
+
+        // Update stage lengths
+        document.getElementById('l-ini').value = cropLengths[crop].l_ini;
+        document.getElementById('l-dev').value = cropLengths[crop].l_dev;
+        document.getElementById('l-mid').value = cropLengths[crop].l_mid;
+        document.getElementById('l-end').value = cropLengths[crop].l_end;
+
+        // Update other properties
+        document.getElementById('h-ini').value = cropProperties[crop].h_ini;
+        document.getElementById('h-max').value = cropProperties[crop].h_max;
+        document.getElementById('zr-ini').value = cropProperties[crop].zr_ini;
+        document.getElementById('zr-max').value = cropProperties[crop].zr_max;
+        document.getElementById('p-value').value = cropProperties[crop].p;
+
+        // Update CN2 value
+        document.getElementById('CN2').value = cn2Values[crop];
+    });
+
+    // Trigger change event on page load to set initial values
+    document.getElementById('crop').dispatchEvent(new Event('change'));
+</script>
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <!-- Main Content -->
+        <div class="col-md-9">
+            <h2>Simulation Results</h2>
+            <h4> Seasonal total of variables</h4>
+
+            <div class="table-responsive">
+                {{ swb_cum_table | safe }}
+            </div>
+            
+
+            <!-- Interactive Plot -->
+            <h4>Water Balance Plot</h4>
+            <div id="interactive-plot" class="border p-3 bg-white shadow-sm">
+                {{ plot_html|safe }}
+            </div>
+
+            <!-- Download Options -->
+            <div class="mt-4">
+                <a href="{{ url_for('results.download_csv') }}" class="btn btn-primary">Download Results as CSV</a>
+                <a href="{{ url_for('results.download_plot') }}" class="btn btn-secondary">Download Plot</a>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-3 bg-light border-start py-3">
+            <h4>Input Parameters</h4>
+
+            <!-- Plant Data -->
+            <h5>Plant Parameters</h5>
+            <ul class="list-unstyled">
+                {% for key, value in plant_data.items() %}
+                    <li><strong>{{ key.capitalize() }}:</strong> {{ value }}</li>
+                {% endfor %}
+            </ul>
+
+            <!-- Weather Data -->
+            <!-- <h5>Weather Parameters</h5>
+            <ul class="list-unstyled">
+                {% for key, value in weather_data.items() %}
+                    <li><strong>{{ key.capitalize() }}:</strong> {{ value }}</li>
+                {% endfor %}
+            </ul> -->
+
+            <!-- Soil Data -->
+            <h5>Soil Parameters</h5>
+            <ul class="list-unstyled">
+                {% for key, value in soil_data.items() %}
+                    <li><strong>{{ key.capitalize() }}:</strong> {{ value }}</li>
+                {% endfor %}
+            </ul>
+
+            <!-- Irrigation Data -->
+            <h5>Irrigation Data</h5>
+            <ul class="list-unstyled">
+                {% for event in irri_data %}
+                    <li>
+                        <strong>Date:</strong> {{ event.Date }},
+                        <strong>Amount:</strong> {{ event.Amount }},
+                        <strong>Fraction:</strong> {{ event.fraction }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
