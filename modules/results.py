@@ -236,10 +236,13 @@ def simulate_model(plant_data, weather_data, soil_data, irri_data):
         
     # This is to adjust the crop coefficient based on the weather data. For instance, if user wants to adjust the crop coefficient based on the weather data then we need to adjust the crop coefficient accordingly.
     # This is explained in pyfao56_mod.py file. Here, we need rmin for adjustments which is not available in Agrimet daily data but in hourly data and we need to find a way to get this.
-    if plant_properties.get('kcb_adjust') == 'on':
-        par.Kcbmid,par.Kcbend = Kcb_adj(w_data,start,end,par.Kcbmid,par.Kcbend,
-                                        par.Lini,par.Ldev,par.Lmid,par.Lend,wth.wndht,par.hmax)
+    # if plant_properties.get('kcb_adjust') == 'on':
+        # par.Kcbmid,par.Kcbend = Kcb_adj(w_data,start,end,par.Kcbmid,par.Kcbend,
+        #                                 par.Lini,par.Ldev,par.Lmid,par.Lend,wth.wndht,par.hmax) #02/18/2025 no longer needed with pyfao56 1.4.0 as we included in the update
         
+    #Boolean to adjust Kcb
+    K_adj = plant_properties.get('kcb_adjust', 'off') == 'on'
+
     # Boolean to simulate the surface runoff.   
     roff = plant_properties.get('roff_adjust', 'on') == 'on'
 
@@ -247,9 +250,9 @@ def simulate_model(plant_data, weather_data, soil_data, irri_data):
     cons_p = not plant_properties.get('p_value_adjust', 'off') == 'on'
 
     if irri_data['Irrigation_type'] == 'manual' or irri_data['Irrigation_type'] == 'upload':
-        mdl = fao.Model(start,end, par, wth, irr, sol=sol, roff=roff, cons_p= cons_p)
+        mdl = fao.Model(start,end, par, wth, irr, sol=sol, roff=roff, cons_p= cons_p, K_adj=K_adj)
     else:
-        mdl = fao.Model(start,end, par, wth, sol=sol,roff=roff, autoirr = airr, cons_p= cons_p,)
+        mdl = fao.Model(start,end, par, wth, sol=sol,roff=roff, autoirr = airr, cons_p= cons_p, K_adj=K_adj)
 
     mdl.run()
     #print(mdl.odata.iloc[:,:5].head(5))

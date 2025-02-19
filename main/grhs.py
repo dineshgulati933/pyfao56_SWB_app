@@ -71,7 +71,7 @@ def wb_plot_interactive(results, save_plot=False, plot_name="wb_plot.html"):
     # --------------------------------------------
     fig.add_trace(go.Scatter(x=results.index, y=results['ETc'], mode='lines', name='ETc', line=dict(color='coral')),
                    row=1, col=1, secondary_y=False)
-    fig.add_trace(go.Scatter(x=results.index, y=results['ETcadj'], mode='lines', name='ETc adj', line=dict(color='olive')),
+    fig.add_trace(go.Scatter(x=results.index, y=results['ETa'], mode='lines', name='ETc adj', line=dict(color='olive')),
                   row=1, col=1, secondary_y=False)
     fig.add_trace(go.Scatter(x=results.index, y=results['Ks'], mode='lines', name='Ks', line=dict(color='green', dash='dot')),
                   row=1, col=1, secondary_y=True)

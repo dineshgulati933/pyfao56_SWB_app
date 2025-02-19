@@ -20,6 +20,12 @@ def index():
             }
             layers.append(layer)
 
+        bottom_depth = float([layer['bottom_depth'] for layer in layers][-1])
+        zr_max = float(session['plant_data'].get('plant_properties').get('zr_max'))*100  # Convert to cm
+        if bottom_depth < zr_max:
+            flash(f'The bottom depth of the last layer ({bottom_depth} cm) should be greater or equal than the root depth ({zr_max} cm) !', 'danger')
+            return render_template('soil.html')
+
         # Combine all soil data
         soil_data = {
             'soil_type': soil_type,
